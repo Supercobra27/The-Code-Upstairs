@@ -1,20 +1,16 @@
 # tutorial
 
-FIXME: description
+Following a tutorial to teach myself Clojure
 
 ## Installation
 
-Download from http://example.com/FIXME.
+N/A
 
 ## Usage
 
-FIXME: explanation
+Used to teach myself Clojure
 
     $ java -jar tutorial-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
 
 ## Examples
 
@@ -24,13 +20,9 @@ FIXME: listing of options this app accepts.
 
 ...
 
-### Any Other Sections
-### That You Think
-### Might be Useful
-
 ## License
 
-Copyright © 2024 FIXME
+Copyright © 2024 Ryan Silverberg
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
