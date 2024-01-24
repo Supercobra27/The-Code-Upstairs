@@ -14,8 +14,15 @@
   (println  (inc x))
 )
 
+(defn arity  ; Loop function
+  ([num] (println (+ num 2)))
+  ([] (println (+ 1 2)))
+  )
+
 
 (defn -main [] ; Main Function
   (example)
+  (arity 6)
+  (arity)
   
   )
