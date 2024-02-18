@@ -3,3 +3,4 @@
 lorenz.jl
 file.md
 *.exs
+*.pyc
