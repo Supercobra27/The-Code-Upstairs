@@ -4,3 +4,5 @@ lorenz.jl
 file.md
 *.exs
 *.pyc
+settings.json
+.calva
