@@ -6,3 +6,4 @@ file.md
 *.pyc
 settings.json
 .calva
+test.csv
