@@ -7,5 +7,6 @@ load_dotenv()
 
 gfilepath = os.getenv('GFILEPATH')
 test = pd.read_csv('test.csv')
+
 for index, row in test.iterrows():
     create_yt_note(gfilepath, row)

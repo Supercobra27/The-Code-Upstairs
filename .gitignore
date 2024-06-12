@@ -8,3 +8,4 @@ settings.json
 .calva
 test.csv
 .env
+*.txt
