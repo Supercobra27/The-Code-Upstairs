@@ -33,6 +33,6 @@ def create_yt_note(filepath: str, pdrow: pd.Series):
     check_directory(filepath, pdrow["folder"])
     obsidian_note = open(f'{filepath}\\{pdrow["folder"]}\\{pdrow["title"]}.md', "w")
     result = run_shell_command(cmd)
-    print('---\ntags:\n- Fabric_Generated\n---', file=obsidian_note)
+    print('---\ntags:\n- FabricGenerated\n---', file=obsidian_note)
     print(f'# AI Extraction - {pdrow["pattern"]}', file=obsidian_note)
     print(result, file=obsidian_note)
