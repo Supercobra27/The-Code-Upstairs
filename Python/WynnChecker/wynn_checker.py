@@ -1,10 +1,11 @@
 import requests
 import json
 import numpy as np
-import h5py
 import pandas as pd
 from dotenv import load_dotenv
 import os
+import pyarrow.parquet as pq
+import pyarrow as pa
 
 load_dotenv()
 role_id = os.getenv('ROLE_ID')
