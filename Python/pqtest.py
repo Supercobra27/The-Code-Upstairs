@@ -8,11 +8,13 @@ import pyarrow.parquet as pq
 import pyarrow as pa
 
 
+data = {'one': [-1, np.nan, 2.5],
+        'two': ['foo', 'bar', 'baz'],
+        'three': [True, False, True]
+        }
 
-df = pd.DataFrame({'one': [-1, np.nan, 2.5],
-                   'two': ['foo', 'bar', 'baz'],
-                   'three': [True, False, True]},
-                   index=list('abc'))
+
+df = pd.DataFrame(data, index=list('abc'))
 
 table = pa.Table.from_pandas(df)
 pq.write_table(table, 'test.parquet')

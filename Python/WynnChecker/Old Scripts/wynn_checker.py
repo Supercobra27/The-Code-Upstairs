@@ -96,9 +96,8 @@ embed = {
     ]
 }
 
-cringe_message = {
-    "embeds":[embed]
-}
-requests.post(discord_hook, json=cringe_message)
+
+print(embed)
+#requests.post(discord_hook, json=cringe_message)
 
 #df.to_csv('output.csv',index=False)
