@@ -6,7 +6,7 @@ file.md
 *.pyc
 settings.json
 .calva
-test.csv
+*.csv
 .env
 *.txt
 *.parquet
