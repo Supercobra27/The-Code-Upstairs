@@ -52,6 +52,11 @@ async def reload_data():
         current_load = collect_player_data(players_data)
         print("Reload Complete")
         await asyncio.sleep(60)
+        
+async def reload_status():
+    while True:
+        await client.change_presence(activity=discord.Game(name=f"Total Online: {(current_load[0]['Online'] == 'Online').sum()}/{len(current_load[0]['Online'])}"))
+        await asyncio.sleep(5)
 
 intents = Intents.default()
 intents.message_content = True
@@ -63,6 +68,7 @@ current_load = pd.DataFrame()
 async def on_ready():
     try:
         client.loop.create_task(reload_data())
+        client.loop.create_task(reload_status())
         await tree.sync(guild=discord.Object(id=guild_id))
         print(f'Logged in as {client.user}')
     except Exception as e:
